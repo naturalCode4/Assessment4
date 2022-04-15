@@ -42,8 +42,8 @@ app.get('/api/buddhas', getBuddhas)
 // const { deleteBuddha } = require('./controller')
 // app.delete('/api/buddhas/:id', deleteBuddha)
 
-const { createBuddha } = require('./controller')
-app.post('/api/buddhas', createBuddha)
+// const { createBuddha } = require('./controller')
+// app.post('/api/buddhas', createBuddha)
 
 // const { updateBuddha } = require('./controller.js')
 // app.put('/api/buddhas/:id' , updateBuddha)

@@ -5,21 +5,21 @@ globalId = buddhas.length + 1
 module.exports = {
     getBuddhas: (req, res) => res.status(200).send(buddhas),
 
-    deleteBuddha: (req, res) => {
-        let index = buddhas.findIndex(elem => elem.id === +req.params.id)
-        buddhas.splice(index, 1)
-        res.status(200).send(buddhas)
-    },
+    // deleteBuddha: (req, res) => {
+    //     let index = buddhas.findIndex(elem => elem.id === +req.params.id)
+    //     buddhas.splice(index, 1)
+    //     res.status(200).send(buddhas)
+    // },
 
-    createBuddha: (req, res) => {
-        let { imageURL } = req.body
-        let newBuddha = {
-            id: globalId,
-            imageURL
-        }
-        buddhas.push(newBuddha)
-        res.status(200).send(buddhas)
-    },
+    // createBuddha: (req, res) => {
+    //     let { imageURL } = req.body
+    //     let newBuddha = {
+    //         id: globalId,
+    //         imageURL
+    //     }
+    //     buddhas.push(newBuddha)
+    //     res.status(200).send(buddhas)
+    // },
 
 //     updateMovie: (req, res) => {
 //         let { id } = req.params
