@@ -8,9 +8,10 @@ app.use(cors());
 app.use(express.json()); // When we want to be able to accept JSON.
 
 app.get("/api/compliment", (req, res) => {
-  const compliments = ["Gee, you're a smart cookie!",
+  const compliments = ["You have great gifts to offer the world",
 					 "Cool shirt!",
 					 "Your Javascript skills are stellar.",
+           "You're doin okay, even when you're cranky"
   ];
   // choose random compliment
   let randomIndex = Math.floor(Math.random() * compliments.length);
@@ -38,6 +39,9 @@ app.get('/api/quote', (req, res) => {
 
 const { getBuddhas } = require('./controller.js')
 app.get('/api/buddhas', getBuddhas)
+
+const { getOneBuddha } = require('./controller.js')
+app.get('/api/buddhas', getOneBuddha)
 
 // const { deleteBuddha } = require('./controller')
 // app.delete('/api/buddhas/:id', deleteBuddha)

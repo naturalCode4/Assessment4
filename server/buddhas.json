@@ -1,22 +1,27 @@
 [
     {
       "id": 1,
+      "caption": "Beings dancing around Quanyin, the symbolic embodiment of compassion",
       "imageURL" : "https://cf.ltkcdn.net/feng-shui/images/orig/268994-1600x1030-quan-yin-story-symbolism-use-statues.jpg"
     },
     {
       "id": 2,
+      "caption": "A buddha at peace under a tree, in the moonlight",
       "imageURL" : "https://i0.wp.com/www.eastmojo.com/wp-content/uploads/2021/05/buddha-4264589_1280.jpg?fit=1280%2C782&ssl=1"
     },
     {
       "id": 3,
+      "caption": "Jun Po Roshi reminds you that YOU are Buddha",
       "imageURL" : "https://i.pinimg.com/originals/7e/d8/88/7ed8889a288fba6300061bef8ec68e5d.jpg"
     },
     {
       "id": 4,
+      "caption": "Me and my friends when we work on code",
       "imageURL" : "https://a1.cdn.japantravel.com/photo/59583-201467/1000/jizo-japan-s-guardian-of-travellers-201467.jpg"
     },
     {
       "id": 5,
+      "caption": "An ensō, a sacred symbol in Zen Buddhism symbolizing the togetherness and cyclical nature of all things",
       "imageURL" : "https://www.lionsroar.com/wp-content/uploads/2017/04/enlightenment-600x315-cropped.jpg"
     }
 ]

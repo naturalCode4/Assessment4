@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>BUDDHA!</title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body class="button-container">
     <button id="complimentButton">Get a compliment</button>
@@ -9,10 +10,14 @@
     <br><br>
     <button id="getAllBuddhasButton">Get all our Buddhas</button>
     <br><br>
-    <button id="getABuddha">Get a Buddha by ID</button>
-    <button id="createBuddha">Link your own Buddha</button>
-    <button id="updateBuddha">Change Buddha</button>
-    <button id="deleteBuddha">Remove a Buddha</button>
+    <form id="getABuddhaForm">
+      <button id="getABuddhaButton">Get a Buddha</button>
+      <input type="text" id="buddhaId" minlength="1" maxlength="2" placeholder="Enter id of Buddha">
+    </form>
+    <br><br>
+    <!-- <button id="createBuddhaButton">Link your own Buddha</button>
+    <button id="updateBuddhaButton">Change Buddha</button>
+    <button id="deleteBuddhaButton">Remove a Buddha</button> -->
     
     <section id="buddhas-container">
       

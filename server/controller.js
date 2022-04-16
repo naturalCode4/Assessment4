@@ -1,9 +1,12 @@
 let buddhas = require('./buddhas.json')
 
 globalId = buddhas.length + 1
+globalId = buddhas[buddhas.length - 1].id + 1
 
 module.exports = {
     getBuddhas: (req, res) => res.status(200).send(buddhas),
+
+    getOneBuddha: (req, res) => res.status(200).send(buddhas),
 
     // deleteBuddha: (req, res) => {
     //     let index = buddhas.findIndex(elem => elem.id === +req.params.id)
