@@ -1,1 +1,2 @@
 # Assessment4
+<!-- A portion of this project was supported from coders in and outside of Devmountain. The support involved pointed questions and explanations to me so that I may learn and ultimately write the code myself. In more significant stuckness, strategies were suggested. Additionally, other coders pointed out bugs, typos, and other small corrections -->
