@@ -2,3 +2,7 @@ img {
     height: 550px;
     width: auto;
 }
+
+.deleteButton {
+    background-color: green;
+}
