@@ -68,10 +68,10 @@ function displayOneBuddha(buddhas) {
     const input = document.getElementById('buddhaId')
     const index = buddhas.findIndex(elem => elem.id == +input.value)
     if (!buddhas[index]) {
-        buddhasContainer.innerHTML = "(There is no Buddha with that Id)"
+        buddhasContainer.innerHTML = `(There is no Buddha with that an Id of ${input.value})`
     } else {
+        //buddhas.findIndex(elem => elem.id === +req.params.id) // already defined
         createBuddhaCard(buddhas[index])
-        //buddhas.findIndex(elem => elem.id === +req.params.id)
     }
     input.value = ""
 }
@@ -90,7 +90,6 @@ const getOneBuddha = () => {
 const deleteCallback = (res) => {
     const { buddhas, id } = res.data
     console.log('res: ', res.data)
-    console.log(buddhas, id, buddhas[id-1])
     document.getElementById(`buddhaCard${id}`).remove()
 }
 
@@ -140,6 +139,34 @@ const updateBuddha = () => {
         })
 }
 
+const createCallback = res => {
+    
+    createBuddhaCard(res.data.newBuddha)
+
+    document.getElementById('newBuddhaURL').value = ""
+    document.getElementById('newBuddhaCaption').value = ""
+}
+
+const createBuddha = () => {
+    event.preventDefault()
+
+    // defined in controller: {buddhas, caption, imageURL}
+
+    let inputURL = document.getElementById('newBuddhaURL').value
+    let inputCaption = document.getElementById('newBuddhaCaption').value
+
+    axios
+        .post(`http://localhost:4000/api/buddhas/`, {caption: inputCaption, imageURL: inputURL})
+        .then((res) => {
+            createCallback(res)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+
 document.getElementById('getAllBuddhasButton').addEventListener('click', getAllBuddhas)
 document.getElementById('getABuddhaButton').addEventListener('click', getOneBuddha)
 document.getElementById('updateBuddhaButton').addEventListener('click', updateBuddha)
+document.getElementById('createBuddhaButton').addEventListener('click', createBuddha)

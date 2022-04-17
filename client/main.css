@@ -3,6 +3,17 @@ img {
     width: auto;
 }
 
-.deleteButton {
-    background-color: green;
+button {
+    background-color: lightskyblue;
+    color: rgb(0, 86, 0);
+    border-radius: 5px;
+}
+
+p {
+    color: rgba(39, 0, 195, 0.86);
+    font-weight: bold
+}
+
+img {
+    border-radius: 5px;
 }

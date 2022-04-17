@@ -7,19 +7,24 @@
   <body class="button-container">
     <button id="complimentButton">Get a compliment</button>
     <button id="quoteButton">Get a quote</button>
-    <br><br>
-    <form id="updateBuddhaForm">
-      <button id="updateBuddhaButton">Update Caption</button>
-      <br>
-      <input type="text" id="buddhaIdToChange" minlength="1" maxlength="2" placeholder="Enter id of Buddha">
-      <input type="text" id="updateBuddhaText" minlength="1" maxlength="150" placeholder="Enter new description">
+    <br><br><br>
+    <form id="getABuddhaForm">
+      <input type="text" id="buddhaId" minlength="1" maxlength="2" placeholder="Enter Id of Buddha">
+      <button id="getABuddhaButton">Get a Buddha</button>
+    </form>
+    <br>
+    <button id="getAllBuddhasButton">Get all Buddhas</button>
+    <br><br><br>
+    <form id="createBuddhaForm">
+      <input type="text" id="newBuddhaURL" minlength="1" maxlength="150" placeholder="Insert a URL">
+      <input type="text" id="newBuddhaCaption" minlength="1" maxlength="150" placeholder="Enter a caption">
+      <button id="createBuddhaButton">Insert New Buddha</button>
     </form>
     <br><br>
-    <button id="getAllBuddhasButton">Get all Buddhas</button>
-    <br><br>
-    <form id="getABuddhaForm">
-      <button id="getABuddhaButton">Get a Buddha</button>
-      <input type="text" id="buddhaId" minlength="1" maxlength="2" placeholder="Enter id of Buddha">
+    <form id="updateBuddhaForm">
+      <input type="text" id="buddhaIdToChange" minlength="1" maxlength="2" placeholder="Enter Id of Buddha">
+      <input type="text" id="updateBuddhaText" minlength="0" maxlength="250" placeholder="Enter new description">
+      <button id="updateBuddhaButton">Update Caption</button>
     </form>
     <br><br>
     <!-- <button id="createBuddhaButton">Link your own Buddha</button>
